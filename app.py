@@ -28,7 +28,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     name = st.selectbox('Select Car Brand', cars_data['name'].unique())
-    year = st.slider('Car Manufactured Year', 1994, 2024)
+    year = st.slider('Car Manufactured Year', 2006, 2024)  # Updated range
     km_driven = st.number_input('No. of kms Driven', min_value=11, max_value=200000, step=100)
     fuel = st.selectbox('Fuel Type', cars_data['fuel'].unique())
     seller_type = st.selectbox('Seller Type', cars_data['seller_type'].unique())
@@ -74,7 +74,7 @@ if st.button("🔍 Predict Price"):
 
     # Debugging: Display input data
     st.write("Input Data for Prediction (Debugging):")
-    
+    st.write(input_data_model)
 
     try:
         # Predict car price
