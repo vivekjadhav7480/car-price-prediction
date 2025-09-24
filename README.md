@@ -37,7 +37,7 @@ The application is built with **Python** and deployed using **Streamlit**, enabl
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/your-username/car-price-prediction.git
 cd car-price-prediction
 car-price-prediction/
